@@ -6,6 +6,8 @@ memory.size(max=T)
 
 setwd("C:\\Users\\mnave\\Downloads\\midterm")
 sample_images <- readDICOM("sample_images",recursive = TRUE,verbose = TRUE)
+#train_images <- readDICOM("part2",recursive = TRUE,verbose = TRUE) # for server
+
 si.header <- sample_images$hdr
 img.names <- names(si.header)
 
